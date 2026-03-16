@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="index.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Menú principal</p>
+
+          <a href="dashboard.html" class="nav-link active">Dashboard</a>
+          <a href="levels.html" class="nav-link">Niveles</a>
+          <a href="exercises.html" class="nav-link">Ejercicios</a>
+          <a href="progress.html" class="nav-link">Progreso</a>
+
+          <p class="sidebar-title">Cuenta</p>
+
+          <a href="profile.html" class="nav-link">Perfil</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Continúa aprendiendo</h3>
+        <p>Accede a tus ejercicios y mantén tu progreso activo cada semana.</p>
+        <a href="exercises.html" class="btn btn-primary">Ir a ejercicios</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Bienvenido de nuevo a tu plataforma de aprendizaje.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Oliver Quirós</h2>
+            <span>Nivel actual: A2</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar del estudiante">
+          </div>
+        </div>
+      </header>
+
+      <section class="welcome-grid">
+        <article class="welcome-card">
+          <div class="welcome-content">
+            <span class="welcome-badge">Bienvenido</span>
+            <h2>Continúa tu proceso en Going Bilingual</h2>
+            <p>
+              Has avanzado de forma constante. Sigue trabajando en tus ejercicios
+              y fortalece tus habilidades en lectura, gramática, listening y speaking.
+            </p>
+            <a href="levels.html" class="btn btn-light">Continuar nivel A2</a>
+          </div>
+        </article>
+
+        <article class="progress-card">
+          <div class="card-top">
+            <h3>Progreso general</h3>
+            <span class="course-badge">Curso A2</span>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-header">
+              <p>Completado</p>
+              <strong>65%</strong>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+
+            <small>12 de 18 unidades completadas</small>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <p>Racha</p>
+              <h4>12 días</h4>
+            </div>
+
+            <div class="stat-box">
+              <p>Puntos</p>
+              <h4>2450 XP</h4>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="upcoming-section">
+          <div class="section-top">
+            <h3>Próximos ejercicios</h3>
+            <a href="exercises.html">Ver todos</a>
+          </div>
+
+          <div class="exercise-grid">
+            <article class="exercise-card">
+              <div class="exercise-icon reading">📖</div>
+              <div class="exercise-info">
+                <span>Lectura</span>
+                <h4>Culturas del mundo y comida</h4>
+                <p>Unidad 13 · 15 min</p>
+              </div>
+              <button class="play-button">▶</button>
+            </article>
+
+            <article class="exercise-card">
+              <div class="exercise-icon speaking">🎤</div>
+              <div class="exercise-info">
+                <span>Speaking</span>
+                <h4>Conversación en una cafetería</h4>
+                <p>Unidad 13 · 10 min</p>
+              </div>
+              <button class="play-button">▶</button>
+            </article>
+
+            <article class="exercise-card">
+              <div class="exercise-icon grammar">✍</div>
+              <div class="exercise-info">
+                <span>Gramática</span>
+                <h4>Past perfect tense</h4>
+                <p>Unidad 14 · 20 min</p>
+              </div>
+              <button class="play-button">▶</button>
+            </article>
+
+            <article class="exercise-card">
+              <div class="exercise-icon listening">🎧</div>
+              <div class="exercise-info">
+                <span>Listening</span>
+                <h4>Reporte del clima</h4>
+                <p>Unidad 14 · 12 min</p>
+              </div>
+              <button class="play-button">▶</button>
+            </article>
+          </div>
+        </div>
+
+        <aside class="activity-section">
+          <div class="section-top">
+            <h3>Actividad reciente</h3>
+          </div>
+
+          <div class="activity-list">
+            <article class="activity-item">
+              <div class="activity-icon success">✔</div>
+              <div class="activity-text">
+                <h4>Ejercicio completado</h4>
+                <p>Finalizaste “Future Tenses Mastery”</p>
+                <span>Hace 2 horas</span>
+              </div>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-icon badge">★</div>
+              <div class="activity-text">
+                <h4>Nueva insignia</h4>
+                <p>Obtuviste la insignia de constancia semanal</p>
+                <span>Ayer</span>
+              </div>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-icon forum">💬</div>
+              <div class="activity-text">
+                <h4>Actividad en el foro</h4>
+                <p>Participaste en una discusión de gramática</p>
+                <span>Hace 2 días</span>
+              </div>
+            </article>
+
+            <article class="activity-item">
+              <div class="activity-icon streak">🔥</div>
+              <div class="activity-text">
+                <h4>Racha alcanzada</h4>
+                <p>Completaste 10 días seguidos de estudio</p>
+                <span>Hace 3 días</span>
+              </div>
+            </article>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
