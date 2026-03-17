@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Progreso</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/progress.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Menú principal</p>
+
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="levels.html" class="nav-link">Niveles</a>
+          <a href="exercises.html?level=A2" class="nav-link">Ejercicios</a>
+          <a href="progress.html" class="nav-link active">Progreso</a>
+
+          <p class="sidebar-title">Cuenta</p>
+          <a href="profile.html" class="nav-link">Perfil</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Sigue avanzando</h3>
+        <p>Tu progreso mejora cada vez que completas ejercicios y practicas con constancia.</p>
+        <a href="levels.html" class="btn btn-primary">Ver niveles</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Progreso</h1>
+          <p>Consulta tu avance general, estadísticas y progreso por niveles.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Oliver Quirós</h2>
+            <span>Nivel actual: A2</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar del estudiante">
+          </div>
+        </div>
+      </header>
+
+      <section class="progress-hero">
+        <div class="progress-hero-text">
+          <span class="progress-badge">Resumen general</span>
+          <h2>Tu aprendizaje va por buen camino</h2>
+          <p>
+            Has mantenido una buena constancia en la plataforma. Continúa practicando
+            para desbloquear más ejercicios y avanzar al siguiente nivel.
+          </p>
+        </div>
+
+        <div class="progress-hero-card">
+          <p>Progreso total</p>
+          <strong>65%</strong>
+          <div class="progress-bar large">
+            <div class="progress-fill" style="width: 65%;"></div>
+          </div>
+          <small>12 de 18 unidades completadas</small>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <article class="stat-card">
+          <p>Ejercicios completados</p>
+          <h3>48</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Puntos acumulados</p>
+          <h3>2450 XP</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Racha actual</p>
+          <h3>12 días</h3>
+        </article>
+
+        <article class="stat-card">
+          <p>Tiempo de estudio</p>
+          <h3>27 h</h3>
+        </article>
+      </section>
+
+      <section class="levels-progress-section">
+        <div class="section-top">
+          <h3>Progreso por nivel</h3>
+        </div>
+
+        <div class="levels-progress-list">
+          <article class="level-progress-card">
+            <div class="level-progress-top">
+              <div>
+                <h4>A1 · Principiante</h4>
+                <p>Completado</p>
+              </div>
+              <strong>100%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+          </article>
+
+          <article class="level-progress-card active">
+            <div class="level-progress-top">
+              <div>
+                <h4>A2 · Elemental</h4>
+                <p>Nivel actual</p>
+              </div>
+              <strong>65%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+          </article>
+
+          <article class="level-progress-card">
+            <div class="level-progress-top">
+              <div>
+                <h4>B1 · Intermedio</h4>
+                <p>Pendiente</p>
+              </div>
+              <strong>0%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </article>
+
+          <article class="level-progress-card">
+            <div class="level-progress-top">
+              <div>
+                <h4>B2 · Intermedio alto</h4>
+                <p>Pendiente</p>
+              </div>
+              <strong>0%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </article>
+
+          <article class="level-progress-card">
+            <div class="level-progress-top">
+              <div>
+                <h4>C1 · Avanzado</h4>
+                <p>Pendiente</p>
+              </div>
+              <strong>0%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="progress-bottom-grid">
+        <article class="goal-card">
+          <h3>Meta siguiente</h3>
+          <p>
+            Completar 6 unidades más del nivel A2 para desbloquear el contenido del nivel B1.
+          </p>
+          <a href="exercises.html?level=A2" class="btn btn-primary">Continuar practicando</a>
+        </article>
+
+        <article class="performance-card">
+          <h3>Desempeño reciente</h3>
+          <ul class="performance-list">
+            <li>
+              <span>Reading</span>
+              <strong>82%</strong>
+            </li>
+            <li>
+              <span>Grammar</span>
+              <strong>76%</strong>
+            </li>
+            <li>
+              <span>Listening</span>
+              <strong>69%</strong>
+            </li>
+            <li>
+              <span>Speaking</span>
+              <strong>73%</strong>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

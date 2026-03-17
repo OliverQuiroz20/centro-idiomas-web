@@ -1,0 +1,74 @@
+.levels-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:1.5rem;
+}
+
+.level-card{
+  background:var(--color-surface);
+  border:1px solid var(--color-border);
+  border-radius:20px;
+  padding:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.8rem;
+  transition:var(--transition);
+}
+
+.level-card:hover{
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-md);
+}
+
+.level-card h2{
+  font-size:2rem;
+  color:var(--color-primary);
+}
+
+.level-card p{
+  font-weight:700;
+}
+
+.level-card span{
+  font-size:0.9rem;
+  color:var(--color-text-light);
+}
+
+.level-card.active{
+  border:2px solid var(--color-primary);
+}
+
+.level-card {
+  position: relative;
+}
+
+.level-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.2rem;
+}
+
+.level-card.completed {
+  border: 2px solid #16a34a;
+}
+
+.level-card.active {
+  border: 2px solid var(--color-primary);
+}
+
+.level-card.locked {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.level-card.locked::after {
+  content: "Nivel bloqueado";
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  font-size: 0.75rem;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
+}

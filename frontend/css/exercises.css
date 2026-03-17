@@ -1,0 +1,133 @@
+.exercise-hero {
+  background: linear-gradient(135deg, var(--color-primary), #0f6cc8);
+  color: var(--color-white);
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.exercise-badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.14);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.exercise-hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.exercise-hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+}
+
+.exercise-list-section {
+  margin-top: 1rem;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.exercise-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.exercise-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.exercise-icon.reading {
+  background-color: #ffedd5;
+}
+
+.exercise-icon.grammar {
+  background-color: #dcfce7;
+}
+
+.exercise-icon.listening {
+  background-color: #dbeafe;
+}
+
+.exercise-icon.speaking {
+  background-color: #f3e8ff;
+}
+
+.exercise-content {
+  flex: 1;
+}
+
+.exercise-type {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+
+.exercise-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.exercise-content p {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.8rem;
+}
+
+.exercise-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.exercise-action {
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.exercise-action:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .exercise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-hero-content h2 {
+    font-size: 1.6rem;
+  }
+}

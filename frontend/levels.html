@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Levels</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/levels.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-top">
+
+      <a href="dashboard.html" class="sidebar-logo">
+        <img src="assets/img/hero-image.jpg" class="sidebar-logo-image">
+        <span>Going Bilingual</span>
+      </a>
+
+      <nav class="sidebar-nav">
+
+        <p class="sidebar-title">Menú principal</p>
+
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="levels.html" class="nav-link active">Niveles</a>
+        <a href="exercises.html" class="nav-link">Ejercicios</a>
+        <a href="progress.html" class="nav-link">Progreso</a>
+
+        <p class="sidebar-title">Cuenta</p>
+
+        <a href="profile.html" class="nav-link">Perfil</a>
+
+      </nav>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard-main">
+
+    <header class="dashboard-header">
+
+      <div>
+        <h1>Niveles del curso</h1>
+        <p>Selecciona un nivel para comenzar a practicar.</p>
+      </div>
+
+    </header>
+
+    <section class="levels-grid">
+
+  <!-- A1 COMPLETADO -->
+  <article class="level-card completed">
+    <div class="level-status">✔</div>
+    <h2>A1</h2>
+    <p>Principiante</p>
+    <span>Nivel completado</span>
+  </article>
+
+  <!-- A2 ACTIVO -->
+  <article class="level-card active">
+    <div class="level-status">➡</div>
+    <h2>A2</h2>
+    <p>Elemental</p>
+    <span>Nivel actual</span>
+    <a href="exercises.html?level=A2" class="btn btn-primary">Continuar</a>
+  </article>
+
+  <!-- B1 BLOQUEADO -->
+  <article class="level-card locked">
+    <div class="level-status">🔒</div>
+    <h2>B1</h2>
+    <p>Intermedio</p>
+    <span>Disponible después de completar A2</span>
+  </article>
+
+  <!-- B2 BLOQUEADO -->
+  <article class="level-card locked">
+    <div class="level-status">🔒</div>
+    <h2>B2</h2>
+    <p>Intermedio alto</p>
+    <span>Bloqueado</span>
+  </article>
+
+  <!-- C1 BLOQUEADO -->
+  <article class="level-card locked">
+    <div class="level-status">🔒</div>
+    <h2>C1</h2>
+    <p>Avanzado</p>
+    <span>Bloqueado</span>
+  </article>
+
+</section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

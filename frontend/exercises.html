@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Ejercicios</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/exercises.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Menú principal</p>
+
+          <a href="dashboard.html" class="nav-link">Dashboard</a>
+          <a href="levels.html" class="nav-link">Niveles</a>
+          <a href="exercises.html?level=A2" class="nav-link active">Ejercicios</a>
+          <a href="progress.html" class="nav-link">Progreso</a>
+
+          <p class="sidebar-title">Cuenta</p>
+
+          <a href="profile.html" class="nav-link">Perfil</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Practica por nivel</h3>
+        <p>Selecciona tu nivel y trabaja ejercicios adaptados a tu proceso.</p>
+        <a href="levels.html" class="btn btn-primary">Ver niveles</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Ejercicios</h1>
+          <p id="exercise-subtitle">Aquí verás tus ejercicios disponibles.</p>
+        </div>
+      </header>
+
+      <section class="exercise-hero">
+        <div class="exercise-hero-content">
+          <span class="exercise-badge" id="current-level-badge">Nivel A2</span>
+          <h2 id="current-level-title">Ejercicios del nivel A2</h2>
+          <p id="current-level-description">
+            Practica actividades adaptadas a tu nivel actual.
+          </p>
+        </div>
+      </section>
+
+      <section class="exercise-list-section">
+        <div class="section-top">
+          <h3>Lista de ejercicios</h3>
+        </div>
+
+        <div class="exercise-grid" id="exercise-grid">
+          <!-- JS injecta aquí -->
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/exercises.js"></script>
+</body>
+</html>
