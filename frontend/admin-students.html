@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Estudiantes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin-students.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="admin-dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Administración</p>
+
+          <a href="admin-dashboard.html" class="nav-link">Dashboard</a>
+          <a href="admin-students.html" class="nav-link active">Estudiantes</a>
+          <a href="admin-exercises.html" class="nav-link">Ejercicios</a>
+          <a href="admin-levels.html" class="nav-link">Niveles</a>
+
+          <p class="sidebar-title">General</p>
+
+          <a href="index.html" class="nav-link">Ir al inicio</a>
+          <a href="login.html" class="nav-link">Cerrar sesión</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Gestión de estudiantes</h3>
+        <p>Administra usuarios, niveles asignados y estado de acceso a la plataforma.</p>
+        <a href="#" class="btn btn-primary">Agregar estudiante</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Gestión de estudiantes</h1>
+          <p>Consulta, crea y administra los estudiantes registrados en la plataforma.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Administrador</h2>
+            <span>Rol: Admin</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar administrador">
+          </div>
+        </div>
+      </header>
+
+      <section class="students-top">
+        <article class="students-hero">
+          <span class="admin-badge">Estudiantes</span>
+          <h2>Control de cuentas estudiantiles</h2>
+          <p>
+            Desde aquí puedes registrar nuevos estudiantes, asignar niveles,
+            editar información académica y controlar el acceso institucional.
+          </p>
+        </article>
+
+        <article class="students-action-card">
+          <p>Total registrados</p>
+          <strong>128</strong>
+          <small>Estudiantes activos en el sistema</small>
+          <a href="#" class="btn btn-primary full-width">Nuevo estudiante</a>
+        </article>
+      </section>
+
+      <section class="students-stats">
+        <article class="students-stat-card">
+          <p>Activos</p>
+          <h3>118</h3>
+        </article>
+
+        <article class="students-stat-card">
+          <p>Bloqueados</p>
+          <h3>6</h3>
+        </article>
+
+        <article class="students-stat-card">
+          <p>Nivel A2</p>
+          <h3>34</h3>
+        </article>
+
+        <article class="students-stat-card">
+          <p>Nivel B1</p>
+          <h3>26</h3>
+        </article>
+      </section>
+
+      <section class="students-table-card">
+        <div class="students-table-top">
+          <div>
+            <h3>Listado de estudiantes</h3>
+            <p>Vista general de usuarios registrados.</p>
+          </div>
+
+          <div class="students-actions">
+            <input type="text" placeholder="Buscar estudiante...">
+            <button class="btn btn-primary">Agregar</button>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="students-table">
+            <thead>
+              <tr>
+                <th>Estudiante</th>
+                <th>Correo</th>
+                <th>Nivel</th>
+                <th>Estado</th>
+                <th>Progreso</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="student-cell">
+                    <img src="assets/img/hero-image.jpg" alt="Estudiante">
+                    <div>
+                      <strong>Oliver Quirós</strong>
+                      <span>Grupo 2026</span>
+                    </div>
+                  </div>
+                </td>
+                <td>oliver@example.com</td>
+                <td>A2</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>65%</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="student-cell">
+                    <img src="assets/img/hero-image.jpg" alt="Estudiante">
+                    <div>
+                      <strong>Laura Gómez</strong>
+                      <span>Grupo 2026</span>
+                    </div>
+                  </div>
+                </td>
+                <td>laura@example.com</td>
+                <td>B1</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>42%</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="student-cell">
+                    <img src="assets/img/hero-image.jpg" alt="Estudiante">
+                    <div>
+                      <strong>Carlos Ramírez</strong>
+                      <span>Grupo 2026</span>
+                    </div>
+                  </div>
+                </td>
+                <td>carlos@example.com</td>
+                <td>A1</td>
+                <td><span class="status-badge blocked">Bloqueado</span></td>
+                <td>20%</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="student-cell">
+                    <img src="assets/img/hero-image.jpg" alt="Estudiante">
+                    <div>
+                      <strong>Mariana Torres</strong>
+                      <span>Grupo 2026</span>
+                    </div>
+                  </div>
+                </td>
+                <td>mariana@example.com</td>
+                <td>C1</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>88%</td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/admin-students.js"></script>
+</body>
+</html>

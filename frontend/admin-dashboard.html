@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Panel administrador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="admin-dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Administración</p>
+
+          <a href="admin-dashboard.html" class="nav-link active">Dashboard</a>
+          <a href="admin-students.html" class="nav-link">Estudiantes</a>
+          <a href="admin-exercises.html" class="nav-link">Ejercicios</a>
+          <a href="admin-levels.html" class="nav-link">Niveles</a>
+
+          <p class="sidebar-title">General</p>
+
+          <a href="index.html" class="nav-link">Ir al inicio</a>
+          <a href="login.html" class="nav-link">Cerrar sesión</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Panel administrativo</h3>
+        <p>Gestiona estudiantes, ejercicios y contenidos del sistema desde un solo lugar.</p>
+        <a href="admin-students.html" class="btn btn-primary">Gestionar estudiantes</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Panel de administración</h1>
+          <p>Resumen general del sistema académico y accesos rápidos de gestión.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Administrador</h2>
+            <span>Rol: Admin</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar administrador">
+          </div>
+        </div>
+      </header>
+
+      <section class="admin-hero">
+        <div class="admin-hero-content">
+          <span class="admin-badge">Administración</span>
+          <h2>Control general de la plataforma</h2>
+          <p>
+            Desde este panel puedes supervisar estudiantes, organizar ejercicios,
+            revisar niveles y mantener actualizado el contenido académico.
+          </p>
+        </div>
+
+        <div class="admin-hero-card">
+          <p>Sistema activo</p>
+          <strong>2026</strong>
+          <small>Periodo académico actual</small>
+        </div>
+      </section>
+
+      <section class="admin-stats">
+        <article class="admin-stat-card">
+          <p>Total estudiantes</p>
+          <h3>128</h3>
+        </article>
+
+        <article class="admin-stat-card">
+          <p>Ejercicios registrados</p>
+          <h3>94</h3>
+        </article>
+
+        <article class="admin-stat-card">
+          <p>Niveles activos</p>
+          <h3>5</h3>
+        </article>
+
+        <article class="admin-stat-card">
+          <p>Profesores / admins</p>
+          <h3>6</h3>
+        </article>
+      </section>
+
+      <section class="admin-main-grid">
+        <div class="admin-actions-card">
+          <div class="section-top">
+            <h3>Accesos rápidos</h3>
+          </div>
+
+          <div class="quick-actions-grid">
+            <a href="admin-students.html" class="quick-action-card">
+              <h4>Gestionar estudiantes</h4>
+              <p>Crear, editar y eliminar estudiantes del sistema.</p>
+            </a>
+
+            <a href="admin-exercises.html" class="quick-action-card">
+              <h4>Gestionar ejercicios</h4>
+              <p>Agregar, modificar o eliminar actividades por nivel.</p>
+            </a>
+
+            <a href="admin-levels.html" class="quick-action-card">
+              <h4>Administrar niveles</h4>
+              <p>Revisar contenido y organización por nivel académico.</p>
+            </a>
+
+            <a href="progress.html" class="quick-action-card">
+              <h4>Ver módulo estudiante</h4>
+              <p>Consultar cómo luce la experiencia del estudiante.</p>
+            </a>
+          </div>
+        </div>
+
+        <aside class="admin-activity-card">
+          <div class="section-top">
+            <h3>Actividad reciente</h3>
+          </div>
+
+          <div class="admin-activity-list">
+            <article class="admin-activity-item">
+              <div class="admin-activity-icon success">✔</div>
+              <div>
+                <h4>Estudiante agregado</h4>
+                <p>Se registró un nuevo estudiante en nivel A1.</p>
+                <span>Hace 1 hora</span>
+              </div>
+            </article>
+
+            <article class="admin-activity-item">
+              <div class="admin-activity-icon primary">✍</div>
+              <div>
+                <h4>Ejercicio actualizado</h4>
+                <p>Se modificó una actividad de gramática en A2.</p>
+                <span>Hace 3 horas</span>
+              </div>
+            </article>
+
+            <article class="admin-activity-item">
+              <div class="admin-activity-icon neutral">★</div>
+              <div>
+                <h4>Nivel revisado</h4>
+                <p>Se actualizaron contenidos del nivel B1.</p>
+                <span>Ayer</span>
+              </div>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Niveles admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin-levels.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="admin-dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Administración</p>
+
+          <a href="admin-dashboard.html" class="nav-link">Dashboard</a>
+          <a href="admin-students.html" class="nav-link">Estudiantes</a>
+          <a href="admin-exercises.html" class="nav-link">Ejercicios</a>
+          <a href="admin-levels.html" class="nav-link active">Niveles</a>
+
+          <p class="sidebar-title">General</p>
+
+          <a href="index.html" class="nav-link">Ir al inicio</a>
+          <a href="login.html" class="nav-link">Cerrar sesión</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Gestión de niveles</h3>
+        <p>Administra el contenido académico por nivel y supervisa su estado general.</p>
+        <a href="#" class="btn btn-primary">Editar niveles</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Gestión de niveles</h1>
+          <p>Consulta los niveles del sistema, sus ejercicios y estado académico.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Administrador</h2>
+            <span>Rol: Admin</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar administrador">
+          </div>
+        </div>
+      </header>
+
+      <section class="admin-levels-top">
+        <article class="admin-levels-hero">
+          <span class="admin-badge">Niveles</span>
+          <h2>Organización académica del sistema</h2>
+          <p>
+            Supervisa la estructura de A1 a C1, consulta el contenido disponible
+            y mantén organizada la progresión de aprendizaje de los estudiantes.
+          </p>
+        </article>
+
+        <article class="admin-levels-card">
+          <p>Niveles activos</p>
+          <strong>5</strong>
+          <small>Marco académico disponible</small>
+          <a href="#" class="btn btn-primary full-width">Actualizar niveles</a>
+        </article>
+      </section>
+
+      <section class="admin-levels-stats">
+        <article class="admin-levels-stat-card">
+          <p>Ejercicios A1</p>
+          <h3>18</h3>
+        </article>
+
+        <article class="admin-levels-stat-card">
+          <p>Ejercicios A2</p>
+          <h3>24</h3>
+        </article>
+
+        <article class="admin-levels-stat-card">
+          <p>Ejercicios B1</p>
+          <h3>20</h3>
+        </article>
+
+        <article class="admin-levels-stat-card">
+          <p>Ejercicios B2/C1</p>
+          <h3>32</h3>
+        </article>
+      </section>
+
+      <section class="levels-admin-grid">
+
+        <article class="level-admin-card">
+          <div class="level-admin-top">
+            <div class="level-admin-badge">A1</div>
+            <span class="status-badge active">Activo</span>
+          </div>
+          <h3>Principiante</h3>
+          <p>Base inicial del idioma con vocabulario esencial y estructuras simples.</p>
+          <ul class="level-admin-list">
+            <li>Ejercicios: 18</li>
+            <li>Estudiantes asignados: 22</li>
+            <li>Estado: Disponible</li>
+          </ul>
+          <button class="btn btn-primary">Editar</button>
+        </article>
+
+        <article class="level-admin-card">
+          <div class="level-admin-top">
+            <div class="level-admin-badge">A2</div>
+            <span class="status-badge active">Activo</span>
+          </div>
+          <h3>Elemental</h3>
+          <p>Consolidación de estructuras básicas y comprensión de situaciones cotidianas.</p>
+          <ul class="level-admin-list">
+            <li>Ejercicios: 24</li>
+            <li>Estudiantes asignados: 34</li>
+            <li>Estado: Disponible</li>
+          </ul>
+          <button class="btn btn-primary">Editar</button>
+        </article>
+
+        <article class="level-admin-card">
+          <div class="level-admin-top">
+            <div class="level-admin-badge">B1</div>
+            <span class="status-badge active">Activo</span>
+          </div>
+          <h3>Intermedio</h3>
+          <p>Desarrollo de comunicación funcional y comprensión más amplia de temas cotidianos.</p>
+          <ul class="level-admin-list">
+            <li>Ejercicios: 20</li>
+            <li>Estudiantes asignados: 26</li>
+            <li>Estado: Disponible</li>
+          </ul>
+          <button class="btn btn-primary">Editar</button>
+        </article>
+
+        <article class="level-admin-card">
+          <div class="level-admin-top">
+            <div class="level-admin-badge">B2</div>
+            <span class="status-badge active">Activo</span>
+          </div>
+          <h3>Intermedio alto</h3>
+          <p>Mayor fluidez, argumentación y comprensión de contenidos complejos.</p>
+          <ul class="level-admin-list">
+            <li>Ejercicios: 16</li>
+            <li>Estudiantes asignados: 18</li>
+            <li>Estado: Disponible</li>
+          </ul>
+          <button class="btn btn-primary">Editar</button>
+        </article>
+
+        <article class="level-admin-card">
+          <div class="level-admin-top">
+            <div class="level-admin-badge">C1</div>
+            <span class="status-badge blocked">Revisión</span>
+          </div>
+          <h3>Avanzado</h3>
+          <p>Producción y comprensión avanzada para contextos académicos y profesionales.</p>
+          <ul class="level-admin-list">
+            <li>Ejercicios: 16</li>
+            <li>Estudiantes asignados: 8</li>
+            <li>Estado: En revisión</li>
+          </ul>
+          <button class="btn btn-primary">Editar</button>
+        </article>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/admin-levels.js"></script>
+</body>
+</html>

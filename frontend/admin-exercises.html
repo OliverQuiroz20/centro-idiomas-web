@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Going Bilingual | Ejercicios admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin-exercises.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="admin-dashboard.html" class="sidebar-logo">
+          <img src="assets/img/hero-image.jpg" alt="Logo Going Bilingual" class="sidebar-logo-image">
+          <span>Going Bilingual</span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <p class="sidebar-title">Administración</p>
+
+          <a href="admin-dashboard.html" class="nav-link">Dashboard</a>
+          <a href="admin-students.html" class="nav-link">Estudiantes</a>
+          <a href="admin-exercises.html" class="nav-link active">Ejercicios</a>
+          <a href="admin-levels.html" class="nav-link">Niveles</a>
+
+          <p class="sidebar-title">General</p>
+
+          <a href="index.html" class="nav-link">Ir al inicio</a>
+          <a href="login.html" class="nav-link">Cerrar sesión</a>
+        </nav>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Gestión de ejercicios</h3>
+        <p>Administra las actividades académicas por nivel, tipo y duración.</p>
+        <a href="#" class="btn btn-primary">Crear ejercicio</a>
+      </div>
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+        <div>
+          <h1>Gestión de ejercicios</h1>
+          <p>Crea, organiza, edita y elimina ejercicios de la plataforma.</p>
+        </div>
+
+        <div class="student-summary">
+          <div class="student-info">
+            <h2>Administrador</h2>
+            <span>Rol: Admin</span>
+          </div>
+
+          <div class="student-avatar">
+            <img src="assets/img/hero-image.jpg" alt="Avatar administrador">
+          </div>
+        </div>
+      </header>
+
+      <section class="admin-exercises-top">
+        <article class="admin-exercises-hero">
+          <span class="admin-badge">Ejercicios</span>
+          <h2>Organiza actividades por nivel académico</h2>
+          <p>
+            Gestiona ejercicios de lectura, gramática, listening y speaking,
+            y asígnalos al nivel correspondiente dentro de la plataforma.
+          </p>
+        </article>
+
+        <article class="admin-exercises-card">
+          <p>Total de ejercicios</p>
+          <strong>94</strong>
+          <small>Actividades disponibles en el sistema</small>
+          <a href="#" class="btn btn-primary full-width">Nuevo ejercicio</a>
+        </article>
+      </section>
+
+      <section class="admin-exercises-stats">
+        <article class="admin-exercises-stat-card">
+          <p>Reading</p>
+          <h3>24</h3>
+        </article>
+
+        <article class="admin-exercises-stat-card">
+          <p>Grammar</p>
+          <h3>28</h3>
+        </article>
+
+        <article class="admin-exercises-stat-card">
+          <p>Listening</p>
+          <h3>20</h3>
+        </article>
+
+        <article class="admin-exercises-stat-card">
+          <p>Speaking</p>
+          <h3>22</h3>
+        </article>
+      </section>
+
+      <section class="admin-exercises-table-card">
+        <div class="admin-exercises-table-top">
+          <div>
+            <h3>Listado de ejercicios</h3>
+            <p>Consulta y administra los ejercicios registrados.</p>
+          </div>
+
+          <div class="admin-exercises-actions">
+            <input type="text" placeholder="Buscar ejercicio...">
+            <select>
+              <option>Todos los niveles</option>
+              <option>A1</option>
+              <option>A2</option>
+              <option>B1</option>
+              <option>B2</option>
+              <option>C1</option>
+            </select>
+            <button class="btn btn-primary">Agregar</button>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="admin-exercises-table">
+            <thead>
+              <tr>
+                <th>Ejercicio</th>
+                <th>Tipo</th>
+                <th>Nivel</th>
+                <th>Duración</th>
+                <th>XP</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="exercise-cell">
+                    <div class="exercise-mini-icon reading">📖</div>
+                    <div>
+                      <strong>Culturas del mundo y comida</strong>
+                      <span>Unidad 13</span>
+                    </div>
+                  </div>
+                </td>
+                <td>Reading</td>
+                <td>A2</td>
+                <td>15 min</td>
+                <td>50 XP</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="exercise-cell">
+                    <div class="exercise-mini-icon grammar">✍</div>
+                    <div>
+                      <strong>Past Perfect Tense</strong>
+                      <span>Unidad 14</span>
+                    </div>
+                  </div>
+                </td>
+                <td>Grammar</td>
+                <td>A2</td>
+                <td>20 min</td>
+                <td>100 XP</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="exercise-cell">
+                    <div class="exercise-mini-icon listening">🎧</div>
+                    <div>
+                      <strong>Reporte del clima</strong>
+                      <span>Unidad 14</span>
+                    </div>
+                  </div>
+                </td>
+                <td>Listening</td>
+                <td>A2</td>
+                <td>12 min</td>
+                <td>60 XP</td>
+                <td><span class="status-badge active">Activo</span></td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="exercise-cell">
+                    <div class="exercise-mini-icon speaking">🎤</div>
+                    <div>
+                      <strong>Debate guiado</strong>
+                      <span>Unidad 18</span>
+                    </div>
+                  </div>
+                </td>
+                <td>Speaking</td>
+                <td>B2</td>
+                <td>20 min</td>
+                <td>100 XP</td>
+                <td><span class="status-badge blocked">Inactivo</span></td>
+                <td>
+                  <div class="table-buttons">
+                    <button class="table-btn edit">Editar</button>
+                    <button class="table-btn delete">Eliminar</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/admin-exercises.js"></script>
+</body>
+</html>
